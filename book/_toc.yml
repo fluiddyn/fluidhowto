@@ -2,11 +2,27 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: intro
+root: index
+
 chapters:
-- file: aliases.md
-- file: setup-apps.md
-- file: modules.md
-- file: venv.md
-- file: conda-forge.md
+- file: setup.md
+  sections:
+  - file: aliases.md
+  - file: setup-apps.md
+
+- file: shell.md
+  sections:
+  - file: intro_bash.md
+
+- file: mercurial.md
+  sections:
+  - file: Gitlab_with_Mercurial.ipynb
+  - file: mercurial_heptapod.md
+
+- file: python.md
+  sections:
+  - file: venv.md
+  - file: conda-forge.md
+  - file: modules.md
+
 - file: contributing.md

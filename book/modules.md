@@ -8,7 +8,7 @@ This module is a "read-only" virtual environment based on `/usr/bin/python3` con
 selection of packages useful for fluid mechanics. The module is updated when needed so
 that the packages are up-to-date. The module is tested for simple things (like using
 Numpy, Pandas, Matplotlib as they should be used in 2024), so these simple things should
-always work. If one needs more stability, one should use [other tools](./intro.md).
+always work. If one needs more stability, one should use [other tools](./python.md).
 
 These virtual environments are created by the computer department of the lab and **cannot
 be modified by the users** (`pip install ...` does not work), meaning that all users
@@ -88,7 +88,7 @@ If you encounter a problem, create an issue
 [here](https://gricad-gitlab.univ-grenoble-alpes.fr/legi/soft/trokata/softsync-python-debian11/-/issues).
 
 Note that the purpose of this module is to **simplify the use of Python for simple
-cases**. There are [other tools for other needs](./intro.md).
+cases**. There are [other tools for other needs](./python.md).
 
 - If you need another Python application, you can try to
   [install it with pipx](./setup-apps.md).

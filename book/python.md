@@ -1,8 +1,15 @@
-# Fluiddyn Howto Book
+# How to Python
 
-This is a small introduction on how to use Python at LEGI. We first focus on what can be
-done on the machines running Debian and in particular Debian 11 (Bullseye), which is the
-version used in summer 2024 on the LEGI clusters.
+This is a small introduction on how to use Python for Fluiddyn. For a gentle introduction
+to Python see
+[the website of the Python training](https://python-uga.gricad-pages.univ-grenoble-alpes.fr/py-training-2023)
+that we organized at UGA (Universitée Grenoble Alpes).
+
+Some developers of Fluiddyn work at LEGI laboratory (CNRS, UGA, Grenoble), so this
+documentation contains few notes for people working at LEGI.
+
+We also focus on what can be done on the machines running Debian and in particular Debian
+11 (Bullseye), which is the version used in summer 2024 on the LEGI clusters.
 
 ```{admonition} Note for LEGI
 

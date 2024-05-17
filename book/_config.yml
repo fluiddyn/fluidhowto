@@ -5,10 +5,13 @@ title: Fluiddyn Howto book
 author: The Fluiddyn Community
 logo: logo-fluiddyn.jpg
 
-# Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
-  execute_notebooks: force
+  execute_notebooks: cache
+  exclude_patterns:
+    - Gitlab_with_Mercurial.ipynb
+    - intro_bash.ipynb
+  timeout: 100
 
 # Define the name of the latex output file for PDF builds
 latex:
