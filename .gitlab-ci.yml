@@ -25,4 +25,4 @@ pages:
     paths:
       - public
   only:
-    - default
+    - branch/default
