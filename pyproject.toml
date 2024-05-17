@@ -1,0 +1,21 @@
+[project]
+name = "fluidhowto"
+version = "0.1.0"
+description = "Fluiddyn Howto website"
+authors = [
+    {name = "pierre.augier", email = "pierre.augier@univ-grenoble-alpes.fr"},
+]
+dependencies = [
+    "jupyter-book"
+]
+requires-python = ">=3.9"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
+ignore_package_warnings = ["ipython"]
+
+[tool.pdm.scripts]
+build = "jupyter-book build book"

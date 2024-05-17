@@ -1,0 +1,12 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: aliases.md
+- file: setup-apps.md
+- file: modules.md
+- file: venv.md
+- file: conda-forge.md
+- file: contributing.md

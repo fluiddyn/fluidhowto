@@ -1,0 +1,28 @@
+image: python:3.12
+
+stages:
+  - build
+  - deploy
+
+build:html:
+  stage: build
+  script:
+    - pip install pdm
+    - pdm sync --clean
+    - pdm run build
+    - rm -rf public
+    - mv book/_build/html public
+  artifacts:
+    when: always
+    paths:
+      - public
+
+pages:
+  stage: deploy
+  script:
+    - echo "publish to Gitlab pages"
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
