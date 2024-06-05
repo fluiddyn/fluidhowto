@@ -3,3 +3,4 @@ syntax: glob
 book/_build
 .venv
 .pdm-python
+book/conf.py
