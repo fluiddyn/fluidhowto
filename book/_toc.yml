@@ -16,8 +16,8 @@ chapters:
 
 - file: mercurial.md
   sections:
-  - file: Gitlab_with_Mercurial.ipynb
-  - file: mercurial_heptapod.md
+  - file: mercurial/Gitlab_with_Mercurial.ipynb
+  - file: mercurial/mercurial_heptapod.md
 
 - file: python.md
   sections:

@@ -9,7 +9,7 @@ logo: logo-fluiddyn.jpg
 execute:
   execute_notebooks: cache
   exclude_patterns:
-    - Gitlab_with_Mercurial.ipynb
+    - mercurial/Gitlab_with_Mercurial.ipynb
     - intro_bash.ipynb
   timeout: 100
 
