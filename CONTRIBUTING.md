@@ -5,11 +5,12 @@
    - Login on https://foss.heptapod.net (It can be done with your Github account.)
 
    - Create a ssh key and add it here: https://foss.heptapod.net/-/user_settings/ssh_keys
+     (see the related Gitlab documentation https://foss.heptapod.net/help/user/ssh)
 
    - Clone the repo with
 
      ```sh
-     hg add ssh://hg@foss.heptapod.net/fluiddyn/fluidhowto
+     hg clone ssh://hg@foss.heptapod.net/fluiddyn/fluidhowto
      ```
 
 2. Install PDM for example as explained in
