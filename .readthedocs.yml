@@ -5,6 +5,11 @@ build:
   tools:
     python: "3.11"
   jobs:
+    post_create_environment:
+      - pip install pdm
+    post_install:
+      - pdm use -f $READTHEDOCS_VIRTUALENV_PATH
+      - pdm install
     pre_build:
       # Generate the Sphinx configuration for this Jupyter Book so it builds.
       - "jupyter-book config sphinx book"
