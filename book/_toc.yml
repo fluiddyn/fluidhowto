@@ -16,8 +16,11 @@ chapters:
 
 - file: mercurial.md
   sections:
+  - file: mercurial/install-setup.md
   - file: mercurial/Gitlab_with_Mercurial.ipynb
   - file: mercurial/mercurial_heptapod.md
+  - file: mercurial/heptapod-workflow.md
+  - file: mercurial/interact-with-git-repos.md
 
 - file: python.md
   sections:

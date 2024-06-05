@@ -31,49 +31,7 @@ pipx install mercurial
 pipx inject mercurial hg-git hg-evolve hg-fluiddyn
 ```
 
-You need a file `~/.hgrc` containing something like
-[this file](https://foss.heptapod.net/fluiddyn/fluiddyn/-/raw/branch/default/doc/hgrc).
-It can be downloaded with:
-
-```sh
-wget https://foss.heptapod.net/fluiddyn/fluiddyn/-/raw/branch/default/doc/hgrc -O ~/.hgrc
-```
-
-````{admonition} Command wget not found?
----
-class: dropdown
----
-You might be more lucky with the equivalent command with `curl`:
-
-```bash
-curl -L https://foss.heptapod.net/fluiddyn/fluiddyn/-/raw/branch/default/doc/hgrc -o ~/.hgrc
-```
-````
-
-```{warning}
-You should now have a file `~/.hgrc` in your home directory.
-**Modify it as explained in the file** (change the username and the email address).
-```
-
-You can check that Mercurial is correctly setup with
-
-```sh
-hg version -v
-```
-
-When everything is fine, you should be able to clone Git repos with something like:
-
-```sh
-hg clone https://gricad-gitlab.univ-grenoble-alpes.fr/legi/soft/trokata/softsync-python-debian11.git
-```
-
-or, alternatively and better, but you need to setup a SSH key on
-<https://gricad-gitlab.univ-grenoble-alpes.fr/-/user_settings/ssh_keys> (take time to do
-this since it is really useful!).
-
-```sh
-hg clone git@gricad-gitlab.univ-grenoble-alpes.fr:legi/soft/trokata/softsync-python-debian11.git
-```
+We explain [here](./mercurial/install-setup.md) how to finalize the Mercurial installation.
 
 ## Install and setup xonsh
 
