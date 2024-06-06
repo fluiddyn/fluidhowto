@@ -1,6 +1,9 @@
 # Heptapod workflow based on Merge request and the topic/evolve extensions
 
-We now use a Merge-Request (MR) based workflow for the development of FluidDyn packages.
+For the development of FluidDyn packages is hosted in
+<https://foss.heptapod.net/fluiddyn>. We use a Merge-Request (MR) based
+workflow described in details in [a Quick Start Guide of
+Heptapod](https://heptapod.net/pages/quick-start-guide.html).
 
 ```{note}
 GitLab's "merge requests" are equivalent to GitHub's "pull requests".
@@ -14,7 +17,7 @@ fork the repository to create Merge Requests.
 Instead, you need to become a "developer" of the project. The developers have the
 permission to push changesets (i.e. "commits") in a topic in the main repository (for
 example <https://foss.heptapod.net/fluiddyn/fluidsim>). To acquire the "developer" role,
-please send a message in an [issue] or if needed, create a dedicated issue.
+please send a message in [this issue](https://foss.heptapod.net/fluiddyn/fluiddyn/issues/6) or if needed, create a dedicated issue.
 
 Topics are used in Mercurial for "lightweight branches" (like Git branches). If you are
 unfamiliar with Mercurial topics, you can read
@@ -102,5 +105,3 @@ hg push
 ```
 
 ````
-
-[issue]: https://foss.heptapod.net/fluiddyn/fluiddyn/issues/6

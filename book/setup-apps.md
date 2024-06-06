@@ -31,7 +31,8 @@ pipx install mercurial
 pipx inject mercurial hg-git hg-evolve hg-fluiddyn
 ```
 
-We explain [here](./mercurial/install-setup.md) how to finalize the Mercurial installation.
+We explain [here](./mercurial/install-setup.md) how to finalize the Mercurial
+installation.
 
 ## Install and setup xonsh
 

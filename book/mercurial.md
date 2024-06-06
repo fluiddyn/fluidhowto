@@ -13,9 +13,9 @@ Mercurial couples very well with the programs
 can, just install them, especially Meld).
 
 There are a lot of tutorials and documentations about Mercurial (for example
-[the official Mercurial tutorial](https://wiki.mercurial-scm.org/Tutorial)).
-In this page, I focus on what is needed to develop FluidDyn packages and
-projects hosted on Github or Gitlab.
+[the official Mercurial tutorial](https://wiki.mercurial-scm.org/Tutorial)). In this
+page, I focus on what is needed to develop FluidDyn packages and projects hosted on
+Github or Gitlab.
 
 [Heptapod](https://heptapod.net/) is a friendly fork of GitLab Community Edition
 supporting Mercurial.
