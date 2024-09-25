@@ -39,7 +39,7 @@ installation.
 ```sh
 # a shell much user friendly that bash
 pipx install 'xonsh[full]'
-pipx inject xonsh xontrib-vox
+pipx inject xonsh xontrib-vox xontrib-argcomplete
 ```
 
 One can setup xonsh by running `xonfig web` and then adding the line
@@ -56,6 +56,11 @@ pipx install nox
 pipx install mdformat
 pipx inject mdformat mdformat-myst
 pipx install pypi-timemachine
+pipx install formattex
+pipx install formatbibtex
+#
+pipx install argcomplete
+activate-global-python-argcomplete
 ```
 
 [mercurial]: https://www.mercurial-scm.org/
