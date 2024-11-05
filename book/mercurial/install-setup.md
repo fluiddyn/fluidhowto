@@ -15,14 +15,16 @@ We present pipx and how to install it [here](../setup-apps.md).
 ```sh
 pipx install mercurial
 pipx inject mercurial hg-git hg-evolve hg-fluiddyn
+# potentially useful to fix ssl issues (macOS)
+pipx inject mercurial certifi
 ```
 
 ### With conda (cross-platform, recommended for conda users on Windows, Linux and macOS)
 
 On Windows, macOS and Linux, one can use `conda` (installed with
-[miniconda](https://docs.conda.io/en/latest/miniconda.html)) to install Mercurial with
+[miniforge](https://github.com/conda-forge/miniforge)) to install Mercurial with
 few extensions ([hg-evolve](https://pypi.org/project/hg-evolve) and
-[hg-git](http://hg-git.github.io/)). On Windows, these commands have to be run in the
+[hg-git](https://pypi.org/project/hg-git)). On Windows, these commands have to be run in the
 Anaconda Prompt. First, we need to install
 [conda-app](https://pypi.org/project/conda-app) in the base conda environment:
 
@@ -74,7 +76,7 @@ You should now have a file `~/.hgrc` in your home directory.
 ```
 
 The line starting with hggit is optional and enables the extension
-[hg-git](http://hg-git.github.io/). This extension is useful to work on projects using
+[hg-git](https://pypi.org/project/hg-git). This extension is useful to work on projects using
 Git, for example hosted on Github and Gitlab.
 
 The extensions churn, shelve, rebase, absorb, evolve and topic are very useful for more
