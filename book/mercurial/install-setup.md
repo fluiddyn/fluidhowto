@@ -17,6 +17,7 @@ pipx install mercurial
 pipx inject mercurial hg-git hg-evolve hg-fluiddyn
 # potentially useful to fix ssl issues (macOS)
 pipx inject mercurial certifi
+pipx install hg-setup
 ```
 
 ### With conda (cross-platform, recommended for conda users on Windows, Linux and macOS)
@@ -53,26 +54,14 @@ merge tool [Meld](https://meldmerge.org/)!
 You need a file `~/.hgrc` containing something like
 [this file](https://foss.heptapod.net/fluiddyn/fluiddyn/-/raw/branch/default/doc/hgrc).
 
-A decent Mercurial configuration file can be created with `hg config --edit`. Alternatively, our example file can be downloaded with:
+A decent Mercurial configuration file can be created with `hg config --edit`. Alternatively (recommended for Fluiddyn development), one can use `hg-setup` to create the user configuration file and initialize shell completion:
 
 ```sh
-wget https://foss.heptapod.net/fluiddyn/fluiddyn/-/raw/branch/default/doc/hgrc -O ~/.hgrc
+hg-setup init
 ```
-
-````{admonition} Command wget not found?
----
-class: dropdown
----
-You might be more lucky with the equivalent command with `curl`:
-
-```bash
-curl -L https://foss.heptapod.net/fluiddyn/fluiddyn/-/raw/branch/default/doc/hgrc -o ~/.hgrc
-```
-````
 
 ```{warning}
-You should now have a file `~/.hgrc` in your home directory.
-**Modify it as explained in the file** (change the username and the email address).
+You should now have a file `.hgrc` (or `mercurial.ini` on Windows) in your home directory.
 ```
 
 The line starting with hggit is optional and enables the extension
@@ -112,12 +101,13 @@ to be installed and activated! If they are not activated, the hg-fluiddyn extens
 warn you!
 ```
 
-## Check you install
+## Check your install
 
 You can check that Mercurial is correctly setup with
 
 ```sh
 hg version -v
+hg debuginstall
 ```
 
 When everything is fine, you should be able to clone Git repos with something like:

@@ -31,6 +31,7 @@ pipx install mercurial
 pipx inject mercurial hg-git hg-evolve hg-fluiddyn
 # potentially useful to fix ssl issues (macOS)
 pipx inject mercurial certifi
+pipx install hg-setup
 ```
 
 We explain [here](./mercurial/install-setup.md) how to finalize the Mercurial
