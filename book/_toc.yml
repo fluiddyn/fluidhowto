@@ -7,8 +7,9 @@ root: index
 chapters:
 - file: setup.md
   sections:
-  - file: aliases.md
-  - file: setup-apps.md
+  - file: setup/editors.md
+  - file: setup/aliases.md
+  - file: setup/setup-apps.md
 
 - file: shell.md
   sections:
@@ -24,8 +25,8 @@ chapters:
 
 - file: python.md
   sections:
-  - file: venv.md
-  - file: conda-forge.md
-  - file: modules.md
+  - file: python/venv.md
+  - file: python/conda-forge.md
+  - file: python/modules.md
 
 - file: contributing.md

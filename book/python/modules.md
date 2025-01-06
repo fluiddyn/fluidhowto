@@ -8,7 +8,7 @@ This module is a "read-only" virtual environment based on `/usr/bin/python3` con
 selection of packages useful for fluid mechanics. The module is updated when needed so
 that the packages are up-to-date. The module is tested for simple things (like using
 Numpy, Pandas, Matplotlib as they should be used in 2024), so these simple things should
-always work. If one needs more stability, one should use [other tools](./python.md).
+always work. If one needs more stability, one should use [other tools](../python.md).
 
 These virtual environments are created by the computer department of the lab and **cannot
 be modified by the users** (`pip install ...` does not work), meaning that all users
@@ -52,8 +52,8 @@ If some scripts stopped working after an update of the module,
 [please, fill an issue in this repo](https://gricad-gitlab.univ-grenoble-alpes.fr/legi/soft/trokata/softsync-python-debian11/-/issues).
 
 However, it is simple to exactly recreate an older version of this module. First
-[install the applications used for developping this module](./setup-apps.md). Then, you
-should be able to clone the repo with
+[install the applications used for developping this module](../setup/setup-apps.md).
+Then, you should be able to clone the repo with
 
 ```sh
 cd ~
@@ -88,10 +88,10 @@ If you encounter a problem, create an issue
 [here](https://gricad-gitlab.univ-grenoble-alpes.fr/legi/soft/trokata/softsync-python-debian11/-/issues).
 
 Note that the purpose of this module is to **simplify the use of Python for simple
-cases**. There are [other tools for other needs](./python.md).
+cases**. There are [other tools for other needs](../python.md).
 
 - If you need another Python application, you can try to
-  [install it with pipx](./setup-apps.md).
+  [install it with pipx](../setup/setup-apps.md).
 
 - If you need another Python library that can be useful for other people at LEGI, it can
   be included in the official Python module.

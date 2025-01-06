@@ -1,6 +1,7 @@
 # Install and setup Mercurial
 
-Mercurial needs to be installed AND setup. After installation, do not forget to follow the steps presented in the session [](#setup-mercurial).
+Mercurial needs to be installed AND setup. After installation, do not forget to follow
+the steps presented in the session [](#setup-mercurial).
 
 ## Install Mercurial
 
@@ -10,7 +11,7 @@ Download the installer from <https://tortoisehg.bitbucket.io/>.
 
 ### With pipx (recommended on Linux)
 
-We present pipx and how to install it [here](../setup-apps.md).
+We present pipx and how to install it [here](../setup/setup-apps.md).
 
 ```sh
 pipx install mercurial
@@ -23,10 +24,10 @@ pipx install hg-setup
 ### With conda (cross-platform, recommended for conda users on Windows, Linux and macOS)
 
 On Windows, macOS and Linux, one can use `conda` (installed with
-[miniforge](https://github.com/conda-forge/miniforge)) to install Mercurial with
-few extensions ([hg-evolve](https://pypi.org/project/hg-evolve) and
-[hg-git](https://pypi.org/project/hg-git)). On Windows, these commands have to be run in the
-Anaconda Prompt. First, we need to install
+[miniforge](https://github.com/conda-forge/miniforge)) to install Mercurial with few
+extensions ([hg-evolve](https://pypi.org/project/hg-evolve) and
+[hg-git](https://pypi.org/project/hg-git)). On Windows, these commands have to be run in
+the Anaconda Prompt. First, we need to install
 [conda-app](https://pypi.org/project/conda-app) in the base conda environment:
 
 ```sh
@@ -49,12 +50,15 @@ merge tool [Meld](https://meldmerge.org/)!
 ```
 
 (setup-mercurial)=
+
 ## Setup Mercurial
 
 You need a file `~/.hgrc` containing something like
 [this file](https://foss.heptapod.net/fluiddyn/fluiddyn/-/raw/branch/default/doc/hgrc).
 
-A decent Mercurial configuration file can be created with `hg config --edit`. Alternatively (recommended for Fluiddyn development), one can use `hg-setup` to create the user configuration file and initialize shell completion:
+A decent Mercurial configuration file can be created with `hg config --edit`.
+Alternatively (recommended for Fluiddyn development), one can use `hg-setup` to create
+the user configuration file and initialize shell completion:
 
 ```sh
 hg-setup init
@@ -65,8 +69,8 @@ You should now have a file `.hgrc` (or `mercurial.ini` on Windows) in your home 
 ```
 
 The line starting with hggit is optional and enables the extension
-[hg-git](https://pypi.org/project/hg-git). This extension is useful to work on projects using
-Git, for example hosted on Github and Gitlab.
+[hg-git](https://pypi.org/project/hg-git). This extension is useful to work on projects
+using Git, for example hosted on Github and Gitlab.
 
 The extensions churn, shelve, rebase, absorb, evolve and topic are very useful for more
 advanced users. Note that [evolve](https://www.mercurial-scm.org/doc/evolution/) and

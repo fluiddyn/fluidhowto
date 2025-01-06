@@ -15,4 +15,4 @@ cleanall: clean
 	rm -rf .venv
 
 format:
-	mdformat *.md book/*.md
+	mdformat *.md book/*.md book/*/*.md

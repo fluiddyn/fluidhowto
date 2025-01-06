@@ -34,7 +34,7 @@ pipx inject mercurial certifi
 pipx install hg-setup
 ```
 
-We explain [here](./mercurial/install-setup.md) how to finalize the Mercurial
+We explain [here](../mercurial/install-setup.md) how to finalize the Mercurial
 installation.
 
 ## Install and setup xonsh
