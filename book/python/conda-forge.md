@@ -94,8 +94,15 @@ largest open-source community driven channel called [conda-forge]. With [Minifor
 We can start by creating the `main` environment with the commands:
 
 ```bash
-conda env create --file https://foss.heptapod.net/fluiddyn/fluidhowto/-/raw/main/conda-envs/env-main.yml
+conda env create --file https://foss.heptapod.net/fluiddyn/fluidhowto/-/raw/main/book/python/conda-env-main.yml
 ```
+
+````{dropdown} Content of the .yml file describing the environment?
+
+```{literalinclude} ./conda-env-main.yml
+```
+
+````
 
 While `conda` creates the environment, we can study the most important conda commands:
 

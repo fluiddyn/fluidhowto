@@ -1,0 +1,16 @@
+name: main
+dependencies:
+  # standard packages
+  - ipython
+  - numpy
+  - matplotlib
+  - ipympl
+  - scipy
+  - pandas
+  # jupyterlab and few nice extensions
+  - jupyterlab
+  - jupyterlab-myst
+  - jupyterlab-spellchecker
+  - jupyterlab-variableInspector
+  # to be able to use this environment with Spyder
+  - nb_conda_kernels
