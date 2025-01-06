@@ -1,6 +1,6 @@
 # How to setup a nice development environment
 
-Fluiddyn is mainly developped on Linux.
+Fluiddyn is mainly developed on Linux.
 
 ## Table of contents
 

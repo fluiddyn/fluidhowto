@@ -5,7 +5,7 @@ format: jb-book
 root: index
 
 chapters:
-- file: setup.md
+- file: setup/index.md
   sections:
   - file: setup/editors.md
   - file: setup/aliases.md
@@ -15,7 +15,7 @@ chapters:
   sections:
   - file: intro_bash.md
 
-- file: mercurial.md
+- file: mercurial/index.md
   sections:
   - file: mercurial/install-setup.md
   - file: mercurial/Gitlab_with_Mercurial.ipynb
@@ -23,7 +23,7 @@ chapters:
   - file: mercurial/heptapod-workflow.md
   - file: mercurial/interact-with-git-repos.md
 
-- file: python.md
+- file: python/index.md
   sections:
   - file: python/venv.md
   - file: python/conda-forge.md

@@ -31,7 +31,7 @@ Yes, Python 3.9 is a bit outdated in 2024. The LEGI cluster is running on Debian
 which is nowadays the "old stable" version. The cluster will soon be updated to Debian 12
 (nowadays "Debian stable"), which comes with Python 3.11. In case you need a newer Python
 version or other implementations (like PyPy), you can install them with Conda/Mamba/Pixi
-(see [our documentation on conda-forge](./python/conda-forge.md)) or with
+(see [our documentation on conda-forge](./conda-forge.md)) or with
 [pyenv](https://github.com/pyenv/pyenv).
 
 ```
@@ -40,16 +40,16 @@ One of the most simple way to use Python at LEGI is to activate (for example wit
 `module load python/3.9.2`) the big "read-only" virtual environment created with the
 repository
 [softsync-python-debian11](https://gricad-gitlab.univ-grenoble-alpes.fr/legi/soft/trokata/softsync-python-debian11).
-This possibility is described in detailed [here](./python/modules.md).
+This possibility is described in detailed [here](./modules.md).
 
 At LEGI, the Debian package `python3-venv` is installed so one can create virtual
-environments as explained [here](./python/venv.md).
+environments as explained [here](./venv.md).
 
 The Debian package `python3-pip` is also installed so one can install packages seen by
 the system packages (in `~/.local/lib/python3.9`). However, for most tasks, this practice
 is not recommended. We will only use this possibility to install
 [pipx](https://github.com/pypa/pipx), which can be used to
-[install useful applications](./setup/setup-apps.md).
+[install useful applications](../setup/setup-apps.md).
 
 ## Table of contents
 
