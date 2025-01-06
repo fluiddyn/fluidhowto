@@ -5,7 +5,7 @@
 groups = ["default"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:0fdf8cafee319e71d8a50e004aae14b0e7827056863f09d53edec5393e99893d"
+content_hash = "sha256:a7c3907824158fa8863586dfd588c8c0e49cc1ca657ceb06726c34dcab715305"
 
 [[metadata.targets]]
 requires_python = ">=3.11"
@@ -87,6 +87,21 @@ dependencies = [
 files = [
     {file = "babel-2.16.0-py3-none-any.whl", hash = "sha256:368b5b98b37c06b7daf6696391c3240c938b37767d4584413e8438c5c435fa8b"},
     {file = "babel-2.16.0.tar.gz", hash = "sha256:d1f3554ca26605fe173f3de0c65f750f5a42f924499bf134de6423582298e316"},
+]
+
+[[package]]
+name = "bash-kernel"
+version = "0.10.0"
+summary = "A bash kernel for Jupyter"
+groups = ["default"]
+dependencies = [
+    "filetype",
+    "ipykernel",
+    "pexpect>=4.0",
+]
+files = [
+    {file = "bash_kernel-0.10.0-py2.py3-none-any.whl", hash = "sha256:da28513230f5307c7a49e87352366304dc52b66faa207d6caed1b2bdec03c1fa"},
+    {file = "bash_kernel-0.10.0.tar.gz", hash = "sha256:2ed5a0a416c418d1d751e71505bd6c889e12157444b50c4287a685da775c28ca"},
 ]
 
 [[package]]
@@ -304,6 +319,16 @@ groups = ["default"]
 files = [
     {file = "fastjsonschema-2.20.0-py3-none-any.whl", hash = "sha256:5875f0b0fa7a0043a91e93a9b8f793bcbbba9691e7fd83dca95c28ba26d21f0a"},
     {file = "fastjsonschema-2.20.0.tar.gz", hash = "sha256:3d48fc5300ee96f5d116f10fe6f28d938e6008f59a6a025c2649475b87f76a23"},
+]
+
+[[package]]
+name = "filetype"
+version = "1.2.0"
+summary = "Infer file type and MIME type of any file/buffer. No external dependencies."
+groups = ["default"]
+files = [
+    {file = "filetype-1.2.0-py2.py3-none-any.whl", hash = "sha256:7ce71b6880181241cf7ac8697a2f1eb6a8bd9b429f7ad6d27b8db9ba5f1c2d25"},
+    {file = "filetype-1.2.0.tar.gz", hash = "sha256:66b56cd6474bf41d8c54660347d37afcc3f7d1970648de365c102ef77548aadb"},
 ]
 
 [[package]]
@@ -809,7 +834,6 @@ name = "pexpect"
 version = "4.9.0"
 summary = "Pexpect allows easy control of interactive console applications."
 groups = ["default"]
-marker = "sys_platform != \"win32\" and sys_platform != \"emscripten\""
 dependencies = [
     "ptyprocess>=0.5",
 ]
@@ -865,7 +889,6 @@ name = "ptyprocess"
 version = "0.7.0"
 summary = "Run a subprocess in a pseudo terminal"
 groups = ["default"]
-marker = "sys_platform != \"win32\" and sys_platform != \"emscripten\""
 files = [
     {file = "ptyprocess-0.7.0-py2.py3-none-any.whl", hash = "sha256:4b41f3967fce3af57cc7e94b888626c18bf37a083e3651ca8feeb66d492fef35"},
     {file = "ptyprocess-0.7.0.tar.gz", hash = "sha256:5c5d0a3b48ceee0b48485e0c26037c0acd7d29765ca3fbb5cb3831d347423220"},
