@@ -10,6 +10,7 @@ chapters:
   - file: setup/editors.md
   - file: setup/aliases.md
   - file: setup/setup-apps.md
+  - file: setup/init_os.md
 
 - file: shell.md
   sections:

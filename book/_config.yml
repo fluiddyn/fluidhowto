@@ -40,3 +40,4 @@ sphinx:
     # https://github.com/pydata/pydata-sphinx-theme/issues/1492
     html_theme_options:
       navigation_with_keys: false
+    suppress_warnings: ["etoc.toctree"]
