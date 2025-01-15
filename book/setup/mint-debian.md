@@ -1,4 +1,4 @@
-# Initialize LMDE 6
+# Setup LMDE 6
 
 LMDE is a Linux Mint project which stands for "Linux Mint Debian Edition".
 [LMDE 6](https://www.linuxmint.com/rel_faye.php) is based on Debian 12 Bookworm.
