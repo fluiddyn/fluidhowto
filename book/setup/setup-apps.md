@@ -17,7 +17,7 @@ can run:
 
 ```sh
 python3 -m pip install pipx
-python3 -m pipx ensurepath
+python3 -m pipx ensurepath --prepend
 ```
 
 ## Install and setup Mercurial
