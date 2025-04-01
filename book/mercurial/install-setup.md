@@ -19,7 +19,7 @@ big repositories (with a growing part written in Rust) and collaborative history
 
 In this page, we discuss how to install and setup **modern [Mercurial] using the [topic]
 and [evolve] extensions**. General Mercurial installation instructions are given here
-https://www.mercurial-scm.org/install, however, except if you really know what you do,
+https://www.mercurial-scm.org/install, however, unless you really know what you're doing,
 **I strongly suggest that you just follow the following instructions**.
 
 ```{important}
@@ -49,8 +49,16 @@ These instructions suppose that you have [UV] or [Pipx] installed.
   `````{tab-set}
 
   ````{tab-item} Windows ➜ TortoiseHG
-  [Download the installer](https://www.mercurial-scm.org/release/tortoisehg/windows/) and run
-  it to install TortoiseHG.
+  TortoiseHg, Mercurial and few important extensions can be installed with
+  [Winget](https://learn.microsoft.com/en-us/windows/package-manager/winget/):
+
+  ```powershell
+  winget install TortoiseHg.TortoiseHg -e --accept-package-agreements
+  ```
+
+  Alternatively, one can
+  [download an installer](https://www.mercurial-scm.org/release/tortoisehg/windows/)
+  and run it to install TortoiseHG.
   ````
 
   ````{tab-item} UV
@@ -143,7 +151,7 @@ from the package [hg-evolve](https://pypi.org/project/hg-evolve).
 
   ```
 
-  If everything is fine, you should be able to get some helps provided by the extensions.
+  If everything is fine, you should be able to get some help provided by the extensions.
   Check it!
 
   ```sh
@@ -165,11 +173,17 @@ from the package [hg-evolve](https://pypi.org/project/hg-evolve).
   hg clone https://github.com/paugier/nbabel.git
   ```
 
-  or, alternatively and better, but you need to setup a SSH key on Github (take time to
-  do this since it is really useful!):
+  or, alternatively and better, but you need to
+  [setup a SSH key on Github](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+  (take time to do this since it is really useful!):
 
   ```sh
   hg clone git@github.com:paugier/nbabel.git
+  ```
+
+  ```{note}
+  It is fine to use the same SSH key for other applications, for example Gitlab or
+  Heptapod instances. You only share the public key.
   ```
 
 [evolve]: https://www.mercurial-scm.org/doc/evolution/
