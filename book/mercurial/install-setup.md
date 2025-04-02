@@ -41,8 +41,28 @@ These instructions suppose that you have [UV] or [Pipx] installed.
 - Preliminary: visual diff and merge tools
 
   If you don't use TortoiseHG, you should really install a visual diff and merge tool,
-  for example [Meld](https://meldmerge.org/) (for macOS,
-  [dehesselle-meld](https://formulae.brew.sh/cask/dehesselle-meld)).
+  for example [Meld](https://meldmerge.org/).
+
+  `````{tab-set}
+
+  ````{tab-item} Windows
+  Download and execute the installer here: https://meldmerge.org/
+  ````
+
+  ````{tab-item} macOS
+  Install [dehesselle-meld](https://formulae.brew.sh/cask/dehesselle-meld) with:
+  ```sh
+  brew install --cask dehesselle-meld
+  ```
+  ````
+
+  ````{tab-item} Debian-Ubuntu-Mint
+  (not for WSL since Meld is a graphical app)
+  ```sh
+  sudo apt install meld
+  ```
+  ````
+  `````
 
 - Install Mercurial and its extensions
 
