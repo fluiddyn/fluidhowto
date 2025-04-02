@@ -17,16 +17,16 @@ big repositories (with a growing part written in Rust) and collaborative history
 
 ```
 
-In this page, we discuss how to install and setup **modern [Mercurial] using the [topic]
-and [evolve] extensions**. General Mercurial installation instructions are given here
-https://www.mercurial-scm.org/install, however, unless you really know what you're doing,
-**I strongly suggest that you just follow the following instructions**.
+In this page, we discuss how to install and setup **modern [Mercurial] using the [topic],
+[evolve] and [hg-git] extensions**. General Mercurial installation instructions are given
+here https://www.mercurial-scm.org/install, however, unless you really know what you're
+doing, **I strongly suggest that you just follow the following instructions**.
 
 ```{important}
 
 It is really easy with other installation methods to get a broken installation
 without the topic, evolve and hg-git extensions and **you need them to contribute** to
-some projects.
+projects using modern Mercurial and to projects hosted on Github and Gitlab instances.
 
 ```
 
@@ -152,7 +152,7 @@ from the package [hg-evolve](https://pypi.org/project/hg-evolve).
   ```
 
   If everything is fine, you should be able to get some help provided by the extensions.
-  Check it!
+  Check it (press on `q` to quit the help screen)!
 
   ```sh
   hg help evolve
@@ -187,6 +187,7 @@ from the package [hg-evolve](https://pypi.org/project/hg-evolve).
   ```
 
 [evolve]: https://www.mercurial-scm.org/doc/evolution/
+[hg-git]: https://foss.heptapod.net/mercurial/hg-git
 [mercurial]: https://www.mercurial-scm.org
 [pipx]: https://pipx.pypa.io
 [pixi]: https://pixi.sh
