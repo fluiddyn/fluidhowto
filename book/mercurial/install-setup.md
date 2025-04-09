@@ -28,14 +28,18 @@ It is really easy with other installation methods to get a broken installation
 without the topic, evolve and hg-git extensions and **you need them to contribute** to
 projects using modern Mercurial and to projects hosted on Github and Gitlab instances.
 
+Installing with old tools like `conda` or `pip` is possible but really not a good
+idea for Mercurial.
+
 ```
 
 Since Mercurial is a Python application, recent versions can be installed with tools like
-[UV], [Pipx] or [Pixi]. However, for Windows it is still better to just
-[download and install TortoiseHG](https://www.mercurial-scm.org/release/tortoisehg/windows/).
+[UV], [Pipx] or [Pixi]. However, for Windows it is still better to just install
+TortoiseHG as presented below.
 
 ```{warning}
 These instructions suppose that you have [UV] or [Pipx] installed.
+If these tools do not work correctly, see [](/setup/setup-apps.md).
 ```
 
 - Preliminary: visual diff and merge tools
@@ -57,7 +61,6 @@ These instructions suppose that you have [UV] or [Pipx] installed.
   ````
 
   ````{tab-item} Debian-Ubuntu-Mint
-  (not for WSL since Meld is a graphical app)
   ```sh
   sudo apt install meld
   ```
@@ -115,9 +118,12 @@ These instructions suppose that you have [UV] or [Pipx] installed.
   ```
 
   ```{dropdown} Not using the right hg?
-  Importantly, the directory where UV/Pipx/Pixi puts the executables has to be before other
+  The simplest solution is to uninstall the old Mercurial installed with another method.
+
+  Alternatively, the directory where UV/Pipx/Pixi puts the executables has to be before other
   directories where older Mercurial can be present so that `hg` really corresponds to the
-  Mercurial install with UV/Pipx/Pixi. You can check the environment variable `$PATH`.
+  Mercurial install with UV/Pipx/Pixi. You can check the environment variable `$PATH`. See
+  [](/setup/setup-apps.md).
   ```
 
 - Setup Mercurial (config file `~/.hgrc` and completion)
@@ -132,6 +138,11 @@ These instructions suppose that you have [UV] or [Pipx] installed.
   ````{tab-item} UV
   ```sh
   uvx hg-setup init
+  ```
+  or (if you get an error)
+  ```sh
+  uv tool install hg-setup
+  hg-setup init
   ```
   ````
 

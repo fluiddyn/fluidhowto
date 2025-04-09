@@ -12,30 +12,60 @@ completely transparent for the users.
 
 ## Install pipx
 
-One first needs to install pipx itself. On Debian (and other Linux distributions), one
-can run:
+One first needs to install [Pipx] itself. Some installation methods can be:
 
+`````{tab-set}
+
+````{tab-item} Windows
+```sh
+py -m pip install pipx
+```
+````
+
+````{tab-item} macOS
+Install directly with Python:
 ```sh
 python3 -m pip install pipx
+```
+or with:
+```sh
+brew install pipx
+```
+````
+
+````{tab-item} Debian-Ubuntu-Mint
+```sh
+python3 -m pip install pipx --break-system-packages
+```
+````
+`````
+
+Finalize the installation by running:
+
+`````{tab-set}
+
+````{tab-item} Windows
+```sh
+py -m pipx ensurepath
+```
+````
+
+````{tab-item} macOS
+```sh
 python3 -m pipx ensurepath --prepend
 ```
+````
+
+````{tab-item} Debian-Ubuntu-Mint
+```sh
+python3 -m pipx ensurepath --prepend
+```
+````
+`````
 
 ## Install and setup Mercurial
 
-We start by installing [Mercurial], which is a version control application (like Git, but
-easier and safer) and which can be used to interact with Git repositories hosted on
-Github or on Gitlab instances:
-
-```sh
-pipx install mercurial
-pipx inject mercurial hg-git hg-evolve hg-fluiddyn
-# potentially useful to fix ssl issues (macOS)
-pipx inject mercurial certifi
-pipx install hg-setup
-```
-
-We explain [here](../mercurial/install-setup.md) how to finalize the Mercurial
-installation.
+We explain [here](../mercurial/install-setup.md) how to use Pipx to install Mercurial.
 
 ## Install and setup xonsh
 
@@ -66,4 +96,4 @@ pipx install argcomplete
 activate-global-python-argcomplete
 ```
 
-[mercurial]: https://www.mercurial-scm.org/
+[pipx]: https://pipx.pypa.io
