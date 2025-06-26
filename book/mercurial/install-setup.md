@@ -25,12 +25,15 @@ doing, **I strongly suggest that you just follow the following instructions**.
 ```{important}
 
 It is really easy with other installation methods to get a broken installation
-without the topic, evolve and hg-git extensions and **you need them to contribute** to
-projects using modern Mercurial and to projects hosted on Github and Gitlab instances.
+without the topic, evolve and hg-git extensions and **you need them to contribute**
+to projects using modern Mercurial and to projects hosted on Github and Gitlab instances.
 
-Installing with old tools like `conda` or `pip` is possible but really not a good
-idea for Mercurial.
+Installing with tools like `conda` or `pip` is possible but really not a good
+idea for Mercurial. Unless you really know what you do, it's very easy to
+obtain a broken installation with `apt` or similar package management tools.
 
+You can check your installation by running `hg help topic`,
+which has to print the help for the `topic` command.
 ```
 
 Since Mercurial is a Python application, recent versions can be installed with tools like
@@ -38,7 +41,8 @@ Since Mercurial is a Python application, recent versions can be installed with t
 TortoiseHG as presented below.
 
 ```{warning}
-These instructions suppose that you have [UV] or [Pipx] installed.
+These instructions suppose that you have [UV] (see
+<https://docs.astral.sh/uv/#installation>) or [Pipx] installed.
 If these tools do not work correctly, see [](/setup/setup-apps.md).
 ```
 
